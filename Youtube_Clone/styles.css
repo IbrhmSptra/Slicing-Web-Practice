@@ -1,0 +1,187 @@
+:root{
+    --primary : #181818;
+    --secondary : #212121;
+    --outline : #aaaaaa;
+    --hover : #3d3d3d;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Youtube Sans', sans-serif;
+}
+body{
+    background-color: var(--primary);
+}
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    padding: 0 20px;
+}
+
+
+.left-items{
+    display: flex;
+    align-items: center;
+}
+.hamburger{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.hamburger:hover{
+    background-color: var(--hover);
+}
+.hamburger > i{
+    color: white;
+}
+
+
+.logo{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo > img{
+    width: 25px;
+    z-index: 2;
+}
+.logo > .white{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+}
+.brand{
+    margin-left: 10px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.brand > h1{
+    color: white;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+input#search{
+    padding: 1px 10px 6px;
+    width: 250px;
+    border-radius: 12px 0 0 12px;
+    font-weight: light;
+    border-left: 1px solid var(--outline) ;
+    border-top: 1px solid var(--outline);
+    border-bottom: 1px solid var(--outline);
+    outline: none;
+    color: #aaaaaa;
+    background-color: #181818;
+}
+.search-button{
+    width:40px;
+    padding: 3.5px 4.5px 4px 3.5px;
+    margin-left: -2px;
+    border: none;
+    color: white;
+    background-color: var(--hover);
+    border: 0.5px solid var(--outline);
+    border-radius: 0 12px 12px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.mic{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    columns: white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--hover);
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.mic:hover{
+    background-color: #4f4f4f;
+}
+.right-items{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.make-video{
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.make-video:hover{
+    background-color: var(--hover);
+}
+.notif{
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.notif:hover{
+    background-color: var(--hover);
+}
+.notif > .msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 11px;
+    background-color: red;
+    font-size: 9px;
+    padding-bottom: 2px;
+    border-radius: 12px;
+    position: absolute;
+    top: 8px;
+    right: -2px;
+}
+.profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.profile > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

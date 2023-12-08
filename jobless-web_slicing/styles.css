@@ -12,6 +12,7 @@ body{
     height: 100%;
     padding: 58px 150px;
     box-sizing: border-box;
+    
 }
 /* NAVBARRRRRRRRRR */
 .navbar{
@@ -20,6 +21,9 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 44px;
+}
+.dropdown i{
+    display: none;
 }
 .brand{
     font-size: 22px;
@@ -65,7 +69,7 @@ body{
 /* HEROOOOOOOO */
 .hero{
     width: 100%;
-    margin-top: 135px;
+    margin-top: 125px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -106,6 +110,7 @@ body{
 .link-how{
     color: #001AFF;
     font-weight: 600;
+    font-size: 16px;
 }
 
 /* Jobbbbbbb Carrddddd */
@@ -118,10 +123,12 @@ body{
 }
 .card{
     width: calc(100% / 3);
+    min-width: 360px;
     background-color: white;
     padding: 25px;
     border-radius: 8px;
     margin-top: 17px;
+    box-sizing: border-box;
 }
 .header{
     display: flex;
@@ -196,11 +203,113 @@ hr{
   
   /* Medium screens (tablets) */
   @media only screen and (max-width: 991px) {
-    /* Styles for medium screens go here */
+    .container{
+        position: relative;
+    }
+    .dropdown i{
+        display: block;
+    }
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .navbar{
+        width: 100%;
+        position:absolute;
+        height: unset;
+        align-items: start;
+        right: 0;
+        left: 0;
+    }
+    .brand{
+        margin-left: 50px;
+    }
+    .cta-nav{
+        margin-right: 50px;
+    }
+    .menu-nav{
+        width: 250%;
+        height: fit-content ;
+        flex-direction: column;
+        position: relative;
+        top: 10px;
+        gap: 0px;
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 70%);
+        border-radius: 15px;
+        padding: 20px 0;
+        display: none;
+    }
+    .dropdown:hover .menu-nav{
+        display: flex;
+    }
   }
   
   /* Large screens (desktops) */
   @media only screen and (max-width: 1199px) {
+    .container{
+        padding: 48px 50px;
+    }
+    /* navbarrrrr */
+    .brand{
+        font-size: 19px;
+    }
+    .menu-nav{
+        gap: 20px;
+    }
+    .nav-link a{
+        font-size: 14px;
+    }
+    .cta-nav a{
+        font-size: 14px;
+    }
 
+    /* Herooooo */
+    .hero .title{
+        font-size: 34px;
+    }
+    .hero .desc{
+        font-size: 14px;
+        margin-top: 13px;
+    }
+    .cta-hero{
+        margin-top: 30px;
+    }
+    .btn-explore{
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .link-how{
+        font-size: 14px;
+    }
+
+    /* Joobsss */
+    .container-card{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .info h1{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .info p {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+    }
+    .body{
+        margin: 18px 0;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .footer .tag{
+        padding: 3px 13px;
+        font-size: 10px;
+    }
   }
   
